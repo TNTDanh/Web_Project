@@ -95,8 +95,8 @@ html {
     display: flex;
     justify-content: center;
     width: 100%;
-    background-image: url('/Bai_tap_web/imagereal/bgr4.jpg');
-    height: 800px;
+    height: 574px;
+    background-image: url('./imagereal/bgr4.jpg');
 }
 
 #slider__account input {

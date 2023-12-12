@@ -41,29 +41,29 @@ function contact() {
 
 //Chuyen huong toi trang san pham chi tiet cua ao
 function pagechangeshirt() {
-    window.location.href = "http://127.0.0.1:5500/Bai_tap_web/shirtdetail.html";
+    window.location.href = "shirtdetail.html";
 }
 
 function pagechangeshirtuser() {
-    window.location.href = "http://127.0.0.1:5500/Bai_tap_web/shirtdetailuser.html";
+    window.location.href = "shirtdetailuser.html";
 }
 
 //Chuyen huong toi trang san pham chi tiet cua quan
 function pagechangetrousers() {
-    window.location.href = "http://127.0.0.1:5500/Bai_tap_web/trousersdetail.html";
+    window.location.href = "trousersdetail.html";
 }
 
 function pagechangetrousersuser() {
-    window.location.href = "http://127.0.0.1:5500/Bai_tap_web/trousersdetailuser.html";
+    window.location.href = "trousersdetailuser.html";
 }
 
 //Chuyen huong toi trang san pham chi tiet cua giay
 function pagechangeshoe() {
-    window.location.href = "http://127.0.0.1:5500/Bai_tap_web/shoedetail.html";
+    window.location.href = "shoedetail.html";
 }
 
 function pagechangeshoeuser() {
-    window.location.href = "http://127.0.0.1:5500/Bai_tap_web/shoedetailuser.html";
+    window.location.href = "shoedetailuser.html";
 }
 
 function buy() {
