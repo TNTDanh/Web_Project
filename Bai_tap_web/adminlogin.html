@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Log-in</title>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="themify-icons.css">
+</head>
+<body>
+
+    <header>
+        <div id="home"></div>
+        <div id="header">
+            <ul class="main">
+                <a href="http://127.0.0.1:5500/Bai_tap_web/index.html"><img class="logo" src="./imagereal/DK.logo.jpg"alt="DK"></a>
+                <li onclick="error();"><a href="#"><i class="ti-home"></i>  Store management home page </a></li>
+                <li onclick="error();"><a href="#">Product  <i class="ti-layout-grid2"></i></a></li>
+                <li onclick="error();"><a href="#">Client  <i class="ti-user"></i></a></li>
+                <li onclick="error();"><a href="#">Order  <i class="ti-shopping-cart"></i></a></li>
+                <li onclick="error();"><a href="#">Statistical  <i class="ti-stats-up"></i></a></li>
+                <li class="lock">ADMIN  <i class="ti-lock"></i></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--login-admin-->
+
+    <div id="slider__account">
+        <div id="log-in">
+            <h2 style="padding: 0 0 40px 0;">LOG IN</h2>
+            <form>
+                <i><label for="username">Username:</label><br></i>
+                <input style="margin: 4px 0 24px 0; height: 36px;" type="text" id="username" name="username"
+                    placeholder="  Please enter your username" required><br>
+
+                <i><label for="password">Password:</label><br></i>
+                <input style="margin: 4px 0 36px 0; height: 36px;" type="password" id="password" name="password"
+                    placeholder="  Please enter your password" required><br>
+
+                <button onclick="login()"><a href="http://127.0.0.1:5500/Bai_tap_web/admin.html">LOG IN</a></button><br>
+            </form>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

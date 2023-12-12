@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe-User-1</title>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="themify-icons.css">
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <div id="home"></div>
+        <div id="header">
+            <ul class="main">
+                <a href="http://127.0.0.1:5500/Bai_tap_web/index.html"><img class="logo" src="./imagereal/DK.logo.jpg"
+                        alt="DK"></a>
+                <li><a href="http://127.0.0.1:5500/Bai_tap_web/indexuser.html">Home <i class="ti-home"></i></a></li>
+                <li><a href="http://127.0.0.1:5500/Bai_tap_web/productuser.html">Product <i class="ti-layout-grid2"></i></a>
+                    <ul class="main__product">
+                        <li><a href="http://127.0.0.1:5500/Bai_tap_web/shirtuser1.html">Shirt</a></li>
+                        <li><a href="http://127.0.0.1:5500/Bai_tap_web/trousersuser1.html">Trousers</a></li>
+                        <li><a href="#">Shoe</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="header__search">
+                        <input type="text" placeholder="Search..."> <button onclick="search()" ><a
+                                href="http://127.0.0.1:5500/Bai_tap_web/searchuser.html"><span style="color: black;" class="ti-search"></span></a></button>
+                    </div>
+                </li>
+                <li><a href="#contact">Contact <i class="ti-info-alt"></i></a></li>
+                <li><a href="http://127.0.0.1:5500/Bai_tap_web/cartuser.html">Cart <i class="ti-shopping-cart"></i></a></li>
+                <li><a href="http://127.0.0.1:5500/Bai_tap_web/login.html">Log-Out <i class="ti-shift-right"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--Slider-->
+    <div id="slider">
+        <img class="bgr__img" src="./imagereal/bgr_product.jpg" alt="bgr">
+    </div>
+
+    <div id="Textshow-container">
+        <div class="slide">
+            <h3> FREE SHIPPING WITH INVOICES FROM 900K! </h3>
+        </div>
+        
+        <div class="slide">
+            <h3> BUY MORE PAY LESS - APPLY WHEN BUYING ACCESSORIES </h3>
+        </div>
+
+        <div class="slide">
+            <h3> BUY 2 GET 10% OFF - APPLICABLE TO ALL BASIC ITEMS </h3>
+        </div>
+    </div>
+
+    <div id="search-nangcao">
+        <input type="text" id="searchInput" placeholder="Search by name">
+        <select class="category">
+            <option value="">All Categories</option>
+            <option value="SHIRT">Shirt</option>
+            <option value="TROUSERS">Trousers</option>
+            <option value="SHOE">Shoe</option>
+            
+        </select>
+        <input type="text" id="minPrice" placeholder="Min Price: 10$">
+        <input type="text" id="maxPrice" placeholder="Max Price: 200$">
+        <button onclick="search()"><a href="http://127.0.0.1:5500/Bai_tap_web/searchuser.html">Search</a></button>
+    </div>
+
+    <div id="main">
+
+        <div class="main__menu">
+            <ul>
+                <li><h2>SHOE</h2></li>
+                <li><h2> </h2></li>
+                <li><h2> </h2></li>
+            </ul>
+
+        </div>
+
+        <div class="main__product">
+            <ul class="main__product-shoe"> 
+                <li style="cursor: pointer;" onclick="pagechangeshoeuser()">
+                    <div>
+                        <img src="./imagereal/main_ananas.jpg" alt="3">
+                        <p><b>Urbas SC - High Top - Aloe Wash - AV00195</b></p>
+                        <p><i>Color: Black</i></p>
+                        <p style="color: rgb(218, 9, 9);"><b>Price: 40.5 $</b></p>
+                    </div>
+                </li>
+                <li style="cursor: pointer;" onclick="pagechangeshoeuser()">
+                    <div>
+                        <img src="./imagereal/main_nike.webp" alt="3">
+                        <p><b>Nike Air Force 1 - 07</b></p>
+                        <p><i>Color: White</i></p>
+                        <p style="color: rgb(218, 9, 9);"><b>Price: 38.7 $</b></p>
+                    </div>
+                </li>
+                <li style="cursor: pointer;" onclick="pagechangeshoeuser()">
+                    <div>
+                        <img src="./imagereal/main_bitis.webp" alt="3">
+                        <p><b>Biti's Hunter X Wavy Collection Men's Sports Shoes</b></p>
+                        <p><i>Color: Blue x White</i></p>
+                        <p style="color: rgb(218, 9, 9);"><b>Price: 52.3 $</b></p>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="main__product-shoe"> 
+                <li style="cursor: pointer;" onclick="pagechangeshoeuser()">
+                    <div>
+                        <img src="./imagereal/main_nike.webp" alt="3">
+                        <p><b>Nike Air Force 1 - 07</b></p>
+                        <p><i>Color: White</i></p>
+                        <p style="color: rgb(218, 9, 9);"><b>Price: 38.7 $</b></p>
+                    </div>
+                </li>
+                <li style="cursor: pointer;" onclick="pagechangeshoeuser()">
+                    <div>
+                        <img src="./imagereal/main_bitis.webp" alt="3">
+                        <p><b>Biti's Hunter X Wavy Collection Men's Sports Shoes</b></p>
+                        <p><i>Color: Blue x White</i></p>
+                        <p style="color: rgb(218, 9, 9);"><b>Price: 52.3 $</b></p>
+                    </div>
+                </li>
+                <li style="cursor: pointer;" onclick="pagechangeshoeuser()">
+                    <div>
+                        <img src="./imagereal/main_nikee.webp" alt="3">
+                        <p><b>Air Jordan 1 Mid</b></p>
+                        <p><i>Color: Black x White</i></p>
+                        <p style="color: rgb(218, 9, 9);"><b>Price: 40.5 $</b></p>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="main__product-shoe"> 
+                <li style="cursor: pointer;" onclick="pagechangeshoeuser()">
+                    <div>
+                        <img src="./imagereal/main_ananas.jpg" alt="3">
+                        <p><b>Urbas SC - High Top - Aloe Wash - AV00195</b></p>
+                        <p><i>Color: Black</i></p>
+                        <p style="color: rgb(218, 9, 9);"><b>Price: 40.5 $</b></p>
+                    </div>
+                </li>
+                <li style="cursor: pointer;" onclick="pagechangeshoeuser()">
+                    <div>
+                        <img src="./imagereal/main_nike.webp" alt="3">
+                        <p><b>Nike Air Force 1 - 07</b></p>
+                        <p><i>Color: White</i></p>
+                        <p style="color: rgb(218, 9, 9);"><b>Price: 38.7 $</b></p>
+                    </div>
+                </li>
+                <li style="cursor: pointer;" onclick="pagechangeshoeuser()">
+                    <div>
+                        <img src="./imagereal/main_bitis.webp" alt="3">
+                        <p><b>Biti's Hunter X Wavy Collection Men's Sports Shoes</b></p>
+                        <p><i>Color: Blue x White</i></p>
+                        <p style="color: rgb(218, 9, 9);"><b>Price: 52.3 $</b></p>
+                    </div>
+                </li>
+            </ul>
+        </div> 
+    </div>
+
+    <div id="pagination">
+        <ul>
+            <li><p><a href="#"><<</a></p></li>
+            <button class="pagination__1"><a href="#">1</a></button>
+            <button class="pagination__2"><a href="http://127.0.0.1:5500/Bai_tap_web/shoeuser2.html">2</a></button>
+            <li><p><a href="http://127.0.0.1:5500/Bai_tap_web/shoeuser2.html">>></a></p></li>
+        </ul>
+    </div>
+    <!--Footer-->
+    <footer id="contact">
+        <div class="contact__nav">
+            <div class="contact__nav-info">
+                <h2>Contact</h2>
+                <p><i class="ti-location-pin"></i> Address: 273 An Duong Vuong, Ward 3, District 5, Ho Chi Minh City</p>
+                <p><i class="ti-email"></i> Email: <a
+                        href="mailto:thainguyenthanhdanhmh@gmail.com">thainguyenthanhdanhmh@gmail.com</a></p>
+                <p><i class="ti-mobile"></i> Phone Number: <a href="tel:+0862853345">0862853345</a></p>
+            </div>
+            <div>
+                <img class="contact__nav-img" src="./imagereal/discoveryou.png" alt="discoveryou">
+            </div>
+            <div class="contact__nav-social">
+                <h2>Connect With Us</h2>
+                <ul>
+                    <li><a
+                            href="https://www.instagram.com/tntdanh_2004?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr&fbclid=IwAR2mcTkxO9o2O4pzfJbEt4zzKUNeSVJfwPy4ZBYZhb0fkkAkBx3N3VdrdnY"><i
+                                class="ti-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/tnt.danh.2004?mibextid=LQQJ4d"><i class="ti-facebook"></i></a>
+                    </li>
+                    <li><a href="http://appleid.apple.com"><i class="ti-apple"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC4Oj-uhtNMExGDb_uMFdjCA"><i
+                                class="ti-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="style.js"></script>
+</body>
+
+</html>

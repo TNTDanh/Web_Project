@@ -1,0 +1,619 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    scroll-behavior: smooth;
+    background-color: #efeaeaf6;
+}
+
+/*header*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header .main {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #000000b4;
+    color: #fff;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header .main .logo {
+    max-height: 90px;
+    border-radius: 50%;
+}
+
+#header .main a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#header .main li {
+    position: relative;
+    line-height: 100px;
+}
+
+#header .main .lock:hover {
+    color: #fff;
+    cursor: default;
+}
+
+#header .main>li:hover>a {
+    background-color: #0000000b;
+    color: rgba(231, 173, 57, 0.915);
+    border-radius: 4px;
+}
+
+#slider__account {
+    margin-top: 104px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 590px;
+    background-image: url('/Bai_tap_web/imagereal/bgr4.jpg');
+
+}
+
+#slider__account input {
+    border-radius: 2px;
+    width: 100%;
+}
+
+/*Dang nhap*/
+#log-in {
+    border-radius: 4px;
+    border: 1px solid #767373;
+    background-color: rgb(170, 173, 178);
+    width: 380px;
+    height: 340px;
+    margin: 160px auto auto auto;
+    padding: 20px 20px;
+}
+
+#log-in button {
+    width: 108px;
+    height: 30px;
+    margin: 0 auto 40px;
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+    border-radius: 2px;
+    background-color: #767373;
+}
+
+#log-in button:hover {
+    background-color: #535252;
+}
+
+#log-in button a {
+    width: 108px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+/*info-user*/
+#management {
+    margin-top: 120px;
+}
+
+#management h2 {
+    margin-top: 40px;
+    margin-left: 76px;
+}
+
+#management .management__info {
+    display: flex;
+    margin: 20px 20% 0;
+
+}
+
+#management .management__info li {
+    margin-bottom: 20px;
+    max-height: 40px;
+    list-style-type: none;
+}
+
+#management .management__info .management__info-p {
+    display: flex;
+    line-height: 40px;
+}
+
+#management .management__info .management__info-p input {
+    width: 200px;
+    height: 40px;
+    border-radius: 2px;
+    border: 2px solid #333;
+    text-align: center;
+    margin-left: 8px;
+}
+
+#management .management__info .management__info-p .p {
+    text-align: right;
+}
+
+
+#management .management__info .management__info-p .input ul {
+    display: inline-flex;
+}
+
+#management .management__info .management__info-p .input input {
+    width: 100px;
+    text-align: center;
+}
+
+#management .management__info .management__info-img {
+    margin-top: 52px;
+    margin-left: 60px;
+    text-align: center;
+}
+
+#management .management__info .management__info-img img {
+    max-width: 280px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/*products*/
+
+#product h2 {
+    margin-top: 40px;
+    margin-left: 1%;
+}
+
+#product .product__main {
+    display: inline-flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+#product .product__main .stt {
+    text-align: center;
+}
+
+#product .product__main .img {
+    margin-left: 4px;
+}
+
+#product .product__main .name {
+    margin-left: 4px;
+    justify-content: left;
+}
+
+#product .product__main .describe {
+    width: 38%;
+    margin-left: 8px;
+    text-align: justify;
+}
+
+#product .product__main .price {
+    margin-left: 4px;
+}
+
+#product .product__main .update {
+    margin-left: 4px;
+}
+
+#product .product__main .delete {
+    margin-left: 4px;
+}
+
+#product .product__main .stt p,
+#product .product__main .classify p,
+#product .product__main .price p,
+#product .product__main .update p,
+#product .product__main .delete p {
+    text-align: center;
+}
+
+#product .product__main b,
+#product .product__main b,
+#product .product__main b,
+#product .product__main b {
+    display: flex;
+    justify-content: center;
+}
+
+#product .product__main li {
+    list-style-type: none;
+    height: 120px;
+    margin-left: 8px;
+}
+
+#product .product__main a {
+    text-decoration: none;
+    color: #000;
+}
+
+#product .product__main img {
+    max-height: 100px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+#product .product__main li p {
+    transform: translate(0, 50px);
+}
+
+#product .add button {
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #ec3636f3;
+    margin-left: 88%;
+}
+
+#product button:hover {
+    background-color: #f81616f3;
+}
+
+#product button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*update*/
+
+#update__none {
+    display: none;
+}
+#update h2 {
+    margin-top: 40px;
+    margin-left: 1%;
+}
+
+#update input {
+    line-height: 36px;
+    text-align: center;
+    width: 100%;
+    border-radius: 8px;
+}
+
+#update .product__main {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+#update .product__main .stt p,
+#update .product__main .classify p,
+#update .product__main .price p,
+#update .product__main .update p,
+#update .product__main .delete p {
+    text-align: center;
+}
+
+#update .product__main b,
+#update .product__main b,
+#update .product__main b,
+#update .product__main b {
+    display: flex;
+    justify-content: center;
+}
+
+#update .product__main li {
+    list-style-type: none;
+    height: 100px;
+    margin-left: 8px;
+    margin-bottom: 20px;
+}
+
+#update .product__main img {
+    display: flex;
+    max-height: 100px;
+    width: auto;
+    margin: auto;
+    
+}
+
+#update .update button {
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #ec3636f3;
+}
+
+#update button:hover {
+    background-color: #f81616f3;
+    cursor: pointer;
+}
+
+/*add new product*/
+#add__none{
+    display: none;
+}
+#add__none h2{
+    margin-top: 40px;
+    margin-left: 1%;
+}
+
+#add input {
+    line-height: 36px;
+    text-align: center;
+    width: 100%;
+    border-radius: 8px;
+}
+
+#add .product__main {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+#add .product__main .stt p,
+#add .product__main .classify p,
+#add .product__main .price p,
+#add .product__main .update p,
+#add .product__main .delete p {
+    text-align: center;
+}
+
+#add .product__main b,
+#add .product__main b,
+#add .product__main b,
+#add .product__main b {
+    display: flex;
+    justify-content: center;
+}
+
+#add .product__main li {
+    list-style-type: none;
+    height: 100px;
+    margin-left: 8px;
+    margin-bottom: 20px;
+}
+
+#add .product__main img {
+    display: flex;
+    max-height: 100px;
+    width: auto;
+    margin: auto;
+    
+}
+
+#add .update button {
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #ec3636f3;
+}
+
+#add button:hover {
+    background-color: #f81616f3;
+    cursor: pointer;
+}
+/*khach hang*/
+
+#client h2 {
+    margin-top: 40px;
+    margin-left: 1%;
+}
+
+#client .client__main {
+    display: inline-flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+#client .client__main li {
+    list-style-type: none;
+    width: 100%;
+    line-height: 40px;
+}
+
+#client .client__main .stt {
+    width: auto;
+}
+
+#client .client__main .un {
+    width: auto;
+}
+
+#client .client__main .pass {
+    width: auto;
+}
+
+#client .client__main .phone {
+    width: auto;
+}
+
+#client .client__main .adress {
+    width: auto;
+}
+
+#client .client__main .date {
+    width: auto;
+}
+
+#client .client__main .fix {
+    width: auto;
+}
+
+#client .client__main .block {
+    width: auto;
+}
+
+#client input {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+#client .block input {
+    height: auto;
+}
+
+#client ul .adduser button {
+    width: 100px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: #ec3636f3;
+}
+
+#client .client__main .adduser button:hover {
+    background-color: #f81616f3;
+    cursor: pointer;
+}
+
+#client ul .fix button {
+    width: 80px;
+    border-radius: 4px;
+    background-color: #0def1cf3;
+}
+
+#client ul .fix button:hover {
+    cursor: pointer;
+    background-color: #85f98df3;
+}
+
+/*Don hang*/
+
+#orders h2 {
+    margin-top: 40px;
+    margin-left: 1%;
+}
+
+#orders .orders__main {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 1%;
+    text-align: center;
+}
+
+#orders .orders__main .np {
+    text-align: left;
+}
+
+#orders .orders__main a {
+    text-decoration: none;
+    color: #000;
+}
+
+#orders .orders__main a:hover {
+    text-decoration: none;
+    color: #5d5959;
+}
+
+#orders .orders__main li {
+    list-style-type: none;
+    line-height: 36px;
+}
+
+#orders .orders__main .noprocess input {
+    text-align: center;
+    width: 80px;
+    background-color: #535252;
+    color: #fff;
+    cursor: default;
+}
+
+
+/*Don hang chi tiet*/
+#detail__none {
+    display: none;
+}
+
+.visible .orders__main {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 1%;
+    text-align: center;
+}
+
+.visible .orders__main .np {
+    text-align: left;
+}
+
+.visible .orders__main a {
+    text-decoration: none;
+    color: #000;
+}
+
+.visible .orders__main a:hover {
+    text-decoration: none;
+    color: #5d5959;
+}
+
+.visible .orders__main li {
+    list-style-type: none;
+    line-height: 36px;
+}
+
+.visible .orders__main .noprocess input {
+    text-align: center;
+    width: 80px;
+    background-color: #535252;
+    color: #fff;
+    cursor: default;
+}
+
+
+
+/*Thong ke*/
+#statistical h2 {
+    margin-top: 40px;
+    margin-left: 1%;
+}
+
+#statistical .statistical__main {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 1%;
+    text-align: center;
+}
+
+#statistical .statistical__main li {
+    list-style-type: none;
+    line-height: 32px;
+}
+
+
+
+#statisticsForm form {
+    display: flex;
+}
+
+#statisticsForm label {
+    margin-bottom: 10px;
+    margin-left: 8px;
+}
+
+#statisticsForm input {
+    margin-top: 10px;
+    padding: 4px;
+}
+
+#statisticsForm button {
+    margin-top: 10px;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: #535252;
+    color: #fff;
+    margin-left: 16px;
+}
+
+#statisticsForm button:hover {
+    cursor: pointer;
+    background-color: #a19a9a;
+    color: #fff;
+}
+
+#resultContainer {
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+}
+
+#resultContainer p {
+    margin-left: 24px;
+}

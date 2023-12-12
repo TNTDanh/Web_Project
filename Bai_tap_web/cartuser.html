@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your-Cart</title>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="themify-icons.css">
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <div id="home"></div>
+        <div id="header">
+            <ul class="main">
+                <a href="http://127.0.0.1:5500/Bai_tap_web/index.html"><img class="logo" src="./imagereal/DK.logo.jpg"
+                        alt="DK"></a>
+                <li><a href="http://127.0.0.1:5500/Bai_tap_web/indexuser.html">Home <i class="ti-home"></i></a></li>
+                <li><a href="http://127.0.0.1:5500/Bai_tap_web/productuser.html">Product <i
+                            class="ti-layout-grid2"></i></a>
+                    <ul class="main__product">
+                        <li><a href="http://127.0.0.1:5500/Bai_tap_web/shirtuser1.html">Shirt</a></li>
+                        <li><a href="http://127.0.0.1:5500/Bai_tap_web/trousresuser1.html">Trousers</a></li>
+                        <li><a href="http://127.0.0.1:5500/Bai_tap_web/shoeuser1.html">Shoe</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="header__search">
+                        <input type="text" placeholder="Search..."> <button onclick="search()"><a
+                                href="#history"><span style="color: black;"
+                                    class="ti-search"></span></a></button>
+                    </div>
+                </li>
+                <li><a href="#contact">Contact <i class="ti-info-alt"></i></a></li>
+                <li><a href="#">Cart <i class="ti-shopping-cart"></i></a></li>
+                <li><a href="http://127.0.0.1:5500/Bai_tap_web/login.html">Log-Out <i class="ti-shift-right"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!--Slider-->
+
+    <div id="slider">
+        <img class="bgr__img" src="./imagereal/bgr_product.jpg" alt="bgr">
+    </div>
+
+    <div id="Textshow-container">
+        <div class="slide">
+            <h3> FREE SHIPPING WITH INVOICES FROM 900K! </h3>
+        </div>
+
+        <div class="slide">
+            <h3> BUY MORE PAY LESS - APPLY WHEN BUYING ACCESSORIES </h3>
+        </div>
+
+        <div class="slide">
+            <h3> BUY 2 GET 10% OFF - APPLICABLE TO ALL BASIC ITEMS </h3>
+        </div>
+    </div>
+
+    <div id="search-nangcao">
+        <input type="text" id="searchInput" placeholder="Search by name">
+        <select class="category">
+            <option value="">All Categories</option>
+            <option value="SHIRT">Shirt</option>
+            <option value="TROUSERS">Trousers</option>
+            <option value="SHOE">Shoe</option>
+            
+        </select>
+        <input type="text" id="minPrice" placeholder="Min Price: 10$">
+        <input type="text" id="maxPrice" placeholder="Max Price: 200$">
+        <button onclick="search()"><a href="#history">Search</a></button>
+    </div>
+    
+
+    <div id="main__slider">
+
+        <div class="main__slider-cart">
+            <div class="h2">
+                <h2>YOUR SHOPPING CART</h2>
+                <i>Head towards the sun and you will never see the darkness</i>
+                <h3><i>WISH YOU A HAPPY SHOPPING</i></h3>
+            </div>
+            <hr style="width: 90%; margin: 4px auto 20px auto;">
+            <div id="cart" class="info-cart">
+                <ul class="product">
+                    <li>
+                        <p><b>Product</b></p>
+                    </li>
+                    <li><img src="./imagereal/Blazer1.webp" alt="p1">
+                        <p>Men's Blazer Regular Long Sleeve Crossed Flap - 10F23VES002</p>
+                    </li>
+                    <li><img src="./imagereal/sort2.webp" alt="p2">
+                        <p>Relax Form Plain Linen Men's Shorts - 10S23PSH014</p>
+                    </li>
+                    <li><img src="./imagereal/Bomber1.webp" alt="p3">
+                        <p>Men's Bomber Jacket Smooth Suede Zipper Regular Form - 10F23JAC001</p>
+                    </li>
+                    <li><img src="./imagereal/kaki2.jpg" alt="p4">
+                        <p>Unisex Wide Leg Relax Jogger Pants - 10F22PJOU002</p>
+                    </li>
+                    <li><img src="./imagereal/ananas3.jpg" alt="p5">
+                        <p>Urbas SC - High Top - Aloe Wash - AV00195</p>
+                    </li>
+                    <hr style="margin-top: -8px;">
+                    <li>
+                        <p><b>Select All</b> <i>(5 Products)</i></p>
+                    </li>
+                    <hr style="margin-top: 12px;">
+                </ul>
+                <ul class="quantity">
+                    <li>
+                        <p><b>Quantity</b></p>
+                    </li>
+                    <li><input type="number" id="quantity" placeholder="            1"></li>
+                    <li><input type="number" id="quantity" placeholder="            2"></li>
+                    <li><input type="number" id="quantity" placeholder="            1"></li>
+                    <li><input type="number" id="quantity" placeholder="            3"></li>
+                    <li><input type="number" id="quantity" placeholder="            1"></li>
+                    <hr>
+                    <li>
+                        <p><b><i>8</i></b></p>
+                    </li>
+                    <hr>
+                </ul>
+                <ul class="price">
+                    <li>
+                        <p><b>Price</b></p>
+                    </li>
+                    <li>
+                        <p style="color: rgb(218, 9, 9);"><b> 30 $</b></p>
+                    </li>
+                    <li>
+                        <p style="color: rgb(218, 9, 9);"><b> 19 $</b></p>
+                    </li>
+                    <li>
+                        <p style="color: rgb(218, 9, 9);"><b> 20.6 $</b></p>
+                    </li>
+                    <li>
+                        <p style="color: rgb(218, 9, 9);"><b> 19 $</b></p>
+                    </li>
+                    <li>
+                        <p style="color: rgb(218, 9, 9);"><b> 40.5 $</b></p>
+                    </li>
+                    <hr>
+                    <li>
+                        <p><i>Total Payment: </i><b style="color: rgb(218, 9, 9);"> 186.1 $</b> </p>
+                    </li>
+                    <hr>
+                </ul>
+                <ul class="operation">
+                    <li>
+                        <p><b>Operation</b></p>
+                    </li>
+                    <li><button onclick="removed()">
+                            <p><a href="#">Delete</a></p>
+                        </button></li>
+                    <li><button onclick="removed()">
+                            <p><a href="#">Delete</a></p>
+                        </button></li>
+                    <li><button onclick="removed()">
+                            <p><a href="#">Delete</a></p>
+                        </button></li>
+                    <li><button onclick="removed()">
+                            <p><a href="#">Delete</a></p>
+                        </button></li>
+                    <li><button onclick="removed()">
+                            <p><a href="#">Delete</a></p>
+                        </button></li>
+                    <hr>
+                    <li><button class="order" style=" width: 140px;" onclick="order()">
+                            <p><b><a href="#info-user">PURCHASE</a></b></p>
+                        </button></li>
+                    <hr>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main__slider-info">
+            <div>
+                <h2 id="info-user">Your Delivery Information</h2>
+            </div>
+            <hr style="width: 90%; margin: 4px auto 20px auto;">
+        </div>
+
+        <div class="main__info">
+            <div class="main__info-p">
+                <ul class="p">
+                    <li><i>Fulll Name</i></li>
+                    <li><i>User Name</i></li>
+                    <li><i>Password</i></li>
+                    <li><i>Email</i></li>
+                    <li><i>Phone</i></li>
+                    <li><i>Day Of Birth</i></li>
+                    <li><i>Address</i></li>
+                </ul>
+
+                <ul>
+                    <li><input type="text" value="Tran Lam Thanh"></li>
+                    <li><input type="text" value="Customer2023"></li>
+                    <li><input type="text" value="123123"></li>
+                    <li><input type="text" value="customer2023@gmail.com"></li>
+                    <li><input type="number" value="0969797979"></li>
+                    <li class="input">
+                        <ul>
+                            <li><input type="text" value="Thirty Fisrt"></li>
+                            <li><input type="text" value="May"></li>
+                            <li><input type="number" value="2004"></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <select>
+                            <option value="1">273 An Duong Vuong, Ward 3, District 5, Ho Chi Minh City</option>
+                            <option value="2">285/9 Tran Bnh Trong, Ward 4, District 5, Ho Chi Minh City</option>
+                            <option value="3">130 Tran Phu, Ward 4, District 5, Ho Chi Minh City</option>
+                            <input type="text" placeholder="Other Address">
+                        </select>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="main__info-img">
+                <div><img src="./imagereal/./user-img.png" alt=""></div>
+                <br>
+                <div>
+                    <p><i>Personal representative photo</i></p>
+                </div>
+            </div>
+
+        </div>
+        <div class="submit">
+            <button class="Submit" onclick="submit()">
+                <h2><a href="#history">SUBMIT</a></h2>
+            </button>
+        </div>
+        <hr style="width: 80%; margin: 24px auto 20px auto;">
+
+        <div id="history" class="main__history">
+            <h2>Your Purchase History</h2>
+            <hr style="width: 90%; margin: 4px auto 20px auto;">
+            <div class="main__history-sub">
+                <ul class="product">
+                    <li>
+                        <p><b>Product</b></p>
+                    </li>
+                    <li><img src="./imagereal/Blazer1.webp" alt="p1">
+                        <p>Men's Blazer Regular Long Sleeve Crossed Flap - 10F23VES002</p>
+                    </li>
+                    <li><img src="./imagereal/sort2.webp" alt="p2">
+                        <p>Relax Form Plain Linen Men's Shorts - 10S23PSH014</p>
+                    </li>
+                    <li><img src="./imagereal/Bomber1.webp" alt="p3">
+                        <p>Men's Bomber Jacket Smooth Suede Zipper Regular Form - 10F23JAC001</p>
+                    </li>
+                    <li><img src="./imagereal/kaki2.jpg" alt="p4">
+                        <p>Unisex Wide Leg Relax Jogger Pants - 10F22PJOU002</p>
+                    </li>
+                    <li><img src="./imagereal/ananas3.jpg" alt="p5">
+                        <p>Urbas SC - High Top - Aloe Wash - AV00195</p>
+                    </li>
+                    <hr style="margin-top: -8px;">
+                    <li>
+                        <p><b></b> <i>(5 Products)</i></p>
+                    </li>
+                    <hr style="margin-top: 12px;">
+                </ul>
+                <ul class="quantity">
+                    <li>
+                        <p><b>Quantity</b></p>
+                    </li>
+                    <li><input value="            1"></li>
+                    <li><input value="            1"></li>
+                    <li><input value="            2"></li>
+                    <li><input value="            1"></li>
+                    <li><input value="            1"></li>
+                    <hr>
+                    <li>
+                        <p><b><i>6</i></b></p>
+                    </li>
+                    <hr>
+                </ul>
+                <ul class="price">
+                    <li>
+                        <p><b>Price</b></p>
+                    </li>
+                    <li>
+                        <p style="color: rgb(218, 9, 9);"><b> 30 $</b></p>
+                    </li>
+                    <li>
+                        <p style="color: rgb(218, 9, 9);"><b> 19 $</b></p>
+                    </li>
+                    <li>
+                        <p style="color: rgb(218, 9, 9);"><b> 41.2 $</b></p>
+                    </li>
+                    <li>
+                        <p style="color: rgb(218, 9, 9);"><b> 19 $</b></p>
+                    </li>
+                    <li>
+                        <p style="color: rgb(218, 9, 9);"><b> 40.5 $</b></p>
+                    </li>
+                    <hr>
+                    <li>
+                        <p><i>Total Payment: </i><b style="color: rgb(218, 9, 9);"> 206.7 $</b> </p>
+                    </li>
+                    <hr>
+                </ul>
+                <ul class="operation">
+                    <li>
+                        <p><b>Information Line</b></p>
+                    </li>
+                    <li><p>10-12-2023, District 5, HCM city</p></li>
+                    <li><p>31-10-2023, District 5, HCM city</p></li>
+                    <li><p>19-09-2023, District 5, HCM city</p></li>
+                    <li><p>20-08-2023, District 5, HCM city</p></li>
+                    <li><p>05-01-2023, District 5, HCM city</p></li>
+                    <hr>
+                    <li><button class="order" style=" width: 140px; cursor: default;"><p><b>PAID</b></p>
+                        </button></li>
+                    <hr>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+    <div><a href="#" style="position: absolute; right:0; color: #333;text-decoration: none;">
+            <p class="ti-angle-double-up"><b><i>T.o.p</i></b></p>
+        </a></div>
+    <div><a href="productuser.html" style="position: absolute; left: 0;text-decoration: none;">
+            <p class="ti-angle-double-left"><b><i>Continue Shopping</i></b></p>
+        </a></div>
+
+
+    <!--Footer-->
+    <footer id="contact">
+        <div class="contact__nav">
+            <div class="contact__nav-info">
+                <h2>Contact</h2>
+                <p><i class="ti-location-pin"></i> Address: 273 An Duong Vuong, Ward 3, District 5, Ho Chi Minh City</p>
+                <p><i class="ti-email"></i> Email: <a
+                        href="mailto:thainguyenthanhdanhmh@gmail.com">thainguyenthanhdanhmh@gmail.com</a></p>
+                <p><i class="ti-mobile"></i> Phone Number: <a href="tel:+0862853345">0862853345</a></p>
+            </div>
+            <div>
+                <img class="contact__nav-img" src="./imagereal/discoveryou.png" alt="discoveryou">
+            </div>
+            <div class="contact__nav-social">
+                <h2>Connect With Us</h2>
+                <ul>
+                    <li><a
+                            href="https://www.instagram.com/tntdanh_2004?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr&fbclid=IwAR2mcTkxO9o2O4pzfJbEt4zzKUNeSVJfwPy4ZBYZhb0fkkAkBx3N3VdrdnY"><i
+                                class="ti-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/tnt.danh.2004?mibextid=LQQJ4d"><i class="ti-facebook"></i></a>
+                    </li>
+                    <li><a href="http://appleid.apple.com"><i class="ti-apple"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC4Oj-uhtNMExGDb_uMFdjCA"><i
+                                class="ti-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="style.js"></script>
+</body>
+
+</html>
