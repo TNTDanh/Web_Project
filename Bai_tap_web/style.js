@@ -75,7 +75,14 @@ function buyuser() {
 }
 
 function removed() {
-    alert('Successfully removed!');
+
+    var isConfirmed = confirm("Are you sure you want to remove the order?");
+
+    if (isConfirmed) {
+        alert("Deleted order successfully!");
+    } else {
+        alert("Delete order has been cancelled.");
+    }
 }
 
 function order(){

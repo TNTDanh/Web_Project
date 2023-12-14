@@ -617,3 +617,47 @@ html {
 #resultContainer p {
     margin-left: 24px;
 }
+
+
+/*contact*/
+#contact .contact__nav {
+    display: flex;
+    justify-content: space-around;
+    line-height: 1.6;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+    padding: 160px auto 160px;
+    margin: 120px auto 100px -56px;
+}
+
+#contact .contact__nav-info a {
+    text-decoration: none;
+    color: rgba(5, 107, 250, 0.766);
+}
+
+#contact .contact__nav-social a {
+    text-decoration: none;
+    color: #000000b5;
+    font-size: larger;
+}
+
+#contact .contact__nav-info a:hover,
+#contact .contact__nav-social a:hover {
+    color: rgba(34, 9, 226, 0.678);
+}
+
+#contact .contact__nav-img {
+    margin-top:56px;
+}
+
+#contact .contact__nav-social ul {
+margin-left: 80px;
+}
+
+#contact .contact__nav-social li {
+    list-style-type: none;
+    display: inline-flex;
+    margin: 8px;
+    font-size: 120%;
+}
